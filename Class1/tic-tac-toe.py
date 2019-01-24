@@ -67,7 +67,7 @@ def game():
     play = list(theBoard.keys())
     random.shuffle(play)
     print(play)
-
+    winner = 2
     turn = 'X'
     for i in range(len(play)):
         printBoard(theBoard)
@@ -82,6 +82,9 @@ def game():
             turn = '0'
         else:
             turn = 'X'
+
+        if winner ==2:
+            print("It's a tie.")
 
     printBoard(theBoard)
 
